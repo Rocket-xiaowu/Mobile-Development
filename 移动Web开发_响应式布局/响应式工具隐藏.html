@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <title>Document</title>
+  <style>
+    .row {
+      background-color: green;
+    }
+
+    [class^="col"]:nth-child(3) {
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">1</div>
+      <div class="col-sm-3">2</div>
+      <div class="col-sm-3 d-md-none d-sm-block d-lg-block">大屏在，中屏不在，小屏在</div>
+      <div class="col-sm-3">4</div>
+    </div>
+  </div>
+</body>
+
+</html>

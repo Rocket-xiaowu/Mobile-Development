@@ -1,0 +1,12 @@
+div {
+  width: 100%;
+  height: 200px;
+}
+
+.box1 {
+  background-color: green;
+}
+
+.box2 {
+  background-color: red;
+}

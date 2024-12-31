@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.rtl.min.css">
+  <title>Document</title>
+  <style>
+    [class^="col"] {
+      border: 1px solid black;
+    }
+
+    .container>.row {
+      background-color: skyblue;
+    }
+
+    [class="col-sm-6"] {
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <!-- 列嵌套时必须加上行 -->
+        <div class="row">
+          <div class="col-sm-6">1</div>
+          <div class="col-sm-6">2</div>
+        </div>
+      </div>
+      <div class="col-sm-4">3</div>
+      <div class="col-sm-4">4</div>
+    </div>
+  </div>
+</body>
+
+</html>

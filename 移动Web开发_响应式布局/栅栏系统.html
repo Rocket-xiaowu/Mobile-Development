@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <title>Document</title>
+  <style>
+    [class^="col"] {
+      border: 1px solid #ccc;
+    }
+
+    .row:first-child {
+      background-color: skyblue;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 小屏sm(576px<=screen<768px) -->
+  <!-- 中屏md(768px<=screen<992px) -->
+  <!-- 大屏lg(992px<=screen<1200px) -->
+  <!-- 加大屏xl(1200px<=screen<1400px) -->
+  <!-- 超大屏xxl(>=1400px) -->
+  <!-- 原理是将视口分成12等分 -->
+  <!-- 使用时要遵守一定的规则，使用特定的类名 -->
+  <!-- 栅格系统默认有左右12px的padding -->
+  <div class="container">
+    <div class="row">
+      <!-- 大屏每行4个，中屏每行3个，小屏每行2个，超小屏每行1个 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">1</div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">2</div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">3</div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">4</div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">1</div>
+      <div class="col-lg-2">2</div>
+      <div class="col-lg-2">3</div>
+      <div class="col-lg-2">4</div>
+    </div>
+    <!-- 若份数不足12分，则留白 -->
+    <div class="row">
+      <div class="col-lg-6">1</div>
+      <div class="col-lg-2">2</div>
+      <div class="col-lg-2">3</div>
+      <div class="col-lg-1">4</div>
+    </div>
+    <!-- 若份数超过12分，则会掉下来，另起一行 -->
+    <div class="row">
+      <div class="col-lg-6">1</div>
+      <div class="col-lg-2">2</div>
+      <div class="col-lg-2">3</div>
+      <div class="col-lg-3">4</div>
+    </div>
+  </div>
+
+</body>
+
+</html>

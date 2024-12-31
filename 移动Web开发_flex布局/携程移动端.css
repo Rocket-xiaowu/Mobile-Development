@@ -1,0 +1,269 @@
+body {
+  max-width: 540px;
+  min-width: 320px;
+  margin: 0 auto;
+  font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;
+  color: #000;
+  overflow-x: hidden;
+  background-color: gray;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+.search {
+  position: fixed;
+  top: 0;
+  /* 固定定位相对屏幕而言，但是50%超了，所以再回退自身的50%
+  位移恰巧是相对自身而言 */
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  width: 100%;
+  max-width: 540px;
+  min-width: 320px;
+  height: 44px;
+  display: flex;
+  background-color: #f6f6f6;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+
+.sou {
+  height: 26px;
+  line-height: 24px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 6px 10px;
+  flex: 1;
+  position: relative;
+  font-size: 12px;
+  color: #666;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+  padding-left: 25px;
+}
+
+.sou::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 15px;
+  height: 15px;
+  background: url(../images/sprite.png) no-repeat -59px -279px;
+  background-size: 104px auto;
+}
+
+.user {
+  width: 44px;
+  height: 44px;
+  font-size: 12px;
+  text-align: center;
+  color: #2eaae0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.user::before {
+  content: "";
+  display: block;
+  width: 23px;
+  height: 23px;
+  background: url(../images/sprite.png) no-repeat -59px -194px;
+  background-size: 104px auto;
+  margin: 5px auto -2px;
+}
+
+.focus {
+  padding-top: 44px;
+}
+
+.focus img {
+  width: 100%;
+}
+
+.local-nav {
+  height: 64px;
+  background-color: white;
+  border-radius: 8px;
+  margin: 3px 4px;
+  display: flex;
+}
+
+.local-nav li {
+  flex: 1;
+}
+
+.local-nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+}
+
+.local-nav-icon {
+  width: 32px;
+  height: 32px;
+  margin: 8px;
+  background: url(../images/localnav_bg.png) no-repeat 0 0;
+  background-size: 32px auto;
+}
+
+nav {
+  overflow: hidden;
+  border-radius: 8px;
+  margin: 0 4px 3px;
+}
+
+.nav-common {
+  height: 88px;
+  display: flex;
+}
+
+.nav-common:nth-child(1) {
+  background: -webkit-linear-gradient(left, #fa5a55, #fa994d);
+}
+
+.nav-common:nth-child(2) {
+  background: -webkit-linear-gradient(left, #4b90ed, #53bced);
+}
+
+.nav-common:nth-child(3) {
+  background: -webkit-linear-gradient(left, #34c2a9, #6cd559);
+}
+
+.nav-common:nth-child(2) {
+  margin: 3px 0;
+}
+
+.nav-items {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-items a {
+  flex: 1;
+  text-align: center;
+  line-height: 44px;
+  color: #fff;
+  font-size: 14px;
+  text-shadow: 1px 1px rgba(0, 0, 0, .2);
+}
+
+.nav-items a:first-child {
+  border-bottom: 1px solid #fff;
+}
+
+.nav-items:first-child a {
+  border: 0;
+  background: url(../images/hotel.png) no-repeat bottom center;
+  background-size: 121px auto;
+}
+
+.nav-items:nth-child(-n+2) {
+  border-right: 1px solid #fff;
+}
+
+.subnav-entry {
+  display: flex;
+  border-radius: 8px;
+  background-color: #fff;
+  margin: 0 4px;
+  flex-wrap: wrap;
+  padding: 5px 0;
+}
+
+.subnav-entry li {
+  flex: 20%;
+}
+
+.subnav-entry a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subnav-entry-icon {
+  width: 28px;
+  height: 28px;
+  margin-top: 4px;
+  background: url(../images/subnav-bg.png) no-repeat;
+  background-size: 28px auto;
+}
+
+.sales-box {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+  margin: 4px;
+}
+
+.sales-hd {
+  position: relative;
+  height: 44px;
+  border-bottom: 1px solid #ccc;
+}
+
+.sales-hd h2 {
+  text-indent: -999px;
+  overflow: hidden;
+}
+
+.sales-hd h2::after {
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  content: "";
+  width: 79px;
+  height: 15px;
+  background: url(../images/hot.png) no-repeat 0 -20px;
+  background-size: 79px auto;
+}
+
+.more {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  background: -webkit-linear-gradient(left, #ff506c, #ff6bc6);
+  border-radius: 8px;
+  padding: 3px 20px 3px 10px;
+  color: #fff;
+}
+
+.more::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 9px;
+  width: 7px;
+  height: 7px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(45deg);
+}
+
+.row {
+  display: flex;
+}
+
+.row a {
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+}
+
+.row a:first-child {
+  border-right: 1px solid #ccc;
+}
+
+.row a img {
+  width: 100%;
+}

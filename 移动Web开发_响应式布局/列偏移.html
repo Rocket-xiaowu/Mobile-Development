@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <title>Document</title>
+  <style>
+    .row div {
+      height: 50px;
+      background-color: greenyellow;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">左侧</div>
+      <!-- 让右侧盒子靠右对齐，使用偏移 -->
+      <!-- 本质是通过给盒子增加margin来实现的，只是偏移多少是浏览器计算的 -->
+      <div class="col-sm-4 offset-sm-4">右侧</div>
+    </div>
+    <div class="row">
+      <!-- 居中 -->
+      <!-- 偏移量：(12-盒子自身宽度)/2 -->
+      <div class="col-sm-6 offset-sm-3"></div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+body {
+  background-color: pink;
+}
+body div {
+  width: 100px;
+  height: 200px;
+  background-color: #f0e290;
+  color: pink;
+  font-size: 40px;
+}
+body::after {
+  content: "111";
+}

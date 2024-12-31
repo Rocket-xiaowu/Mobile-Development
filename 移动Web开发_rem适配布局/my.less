@@ -1,0 +1,24 @@
+// 定义变量——必须以@开头，不能有特殊字符，不能以数字开头，严格区分大小写
+@color: pink;
+// 计算直接写即可
+// 只有一个单位，以它为标准
+// 有多个单位，以第一个单位为准
+@font14: 50px-10;
+
+body {
+  background-color: @color;
+
+  // 在Less中子代可以直接写在父元素里，编译会自动处理
+  div {
+    width: 200px-100;
+    height: 200px;
+    background-color: rgb(240, 226, 144);
+    color: @color;
+    font-size: @font14;
+  }
+
+  // 伪类，伪元素和交集选择器需要加上&
+  &::after {
+    content: "111";
+  }
+}

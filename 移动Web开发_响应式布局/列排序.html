@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <title>Document</title>
+  <style>
+    .row div {
+      height: 50px;
+      background-color: greenyellow;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <!-- 往右走是推，往左走是拉 -->
+      <div class="col-sm-4 order-2 order-sm-1">左侧</div>
+      <div class="col-sm-8 order-2 order-sm-0">右侧</div>
+    </div>
+  </div>
+</body>
+
+</html>

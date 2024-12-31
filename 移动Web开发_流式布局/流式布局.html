@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../normalize.css">
+  <style>
+    section {
+      width: 100%;
+      overflow: hidden;
+      margin: 0 auto;
+      /* 添加最大最小值，限定范围（避免过小，将内容挤掉） */
+      max-width: 980px;
+      min-width: 200px;
+    }
+
+    section div {
+      width: 50%;
+      height: 400px;
+      float: left;
+    }
+
+    section div:first-child {
+      background-color: skyblue;
+    }
+
+    section div:last-child {
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 流式布局又称百分比布局，非固定像素布局，使用百分比代替像素值(主要是宽度) -->
+  <section>
+    <div></div>
+    <div></div>
+  </section>
+</body>
+
+</html>
